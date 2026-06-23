@@ -1,22 +1,13 @@
 # TropelCare Control Room
 
-Frontend para la hackathon **Pizza Protocol**. Consola operativa para monitorear y atender Tropeles y Señales del sistema Tuckersoft.
 
 ## Integrantes
 
 | Nombre | Código |
 |--------|--------|
-| (Integrante A) | — |
-| (Integrante B) | — |
-| (Integrante C) | — |
-
-## Stack
-
-- React 18 + TypeScript estricto
-- Vite 5
-- React Router 6
-- Tailwind CSS 3
-- Fetch API (sin librerías de data-fetching)
+| Burgos Ochoa Jeseph Imanol | 2020510395 |
+| Morales Portella Santiago Cesar | 202510403 |
+| Diaz Carrion Gabriel Marcelo | 202510404 |
 
 ## Instalación
 
@@ -43,19 +34,6 @@ npm run typecheck  # Verificación de tipos sin emitir
 npm run preview    # Preview del build
 ```
 
-## Deploy
-
-El deploy debe configurarse con `_redirects` (Netlify) o `vercel.json` para que cualquier ruta sirva `index.html`:
-
-**Netlify** (`public/_redirects`):
-```
-/* /index.html 200
-```
-
-**Vercel** (`vercel.json`):
-```json
-{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
-```
 
 ## Decisiones técnicas
 
