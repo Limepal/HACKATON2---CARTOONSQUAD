@@ -21,8 +21,9 @@ Crea un `.env` basado en `.env.example`:
 
 ```env
 VITE_API_BASE_URL=https://<backend-url>/api/v1
-VITE_TEAM_CODE=TEAM-001
+VITE_TEAM_CODE=TEAM-087
 VITE_EMAIL=operator@tuckersoft.com
+Pizza-TEAM-087
 ```
 
 ## Comandos
