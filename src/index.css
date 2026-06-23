@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Reduced motion: disable all transitions and animations */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -14,7 +13,6 @@
   }
 }
 
-/* Scrollytelling scroll-driven animation (progressive enhancement) */
 @supports (animation-timeline: scroll()) {
   .story-stage {
     animation: stageReveal linear;
@@ -42,7 +40,6 @@
   }
 }
 
-/* View Transition API (progressive enhancement) */
 @supports (view-transition-name: root) {
   ::view-transition-old(root) {
     animation: 200ms ease both fade-out;
@@ -62,7 +59,6 @@
   to   { opacity: 1; }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -78,13 +74,11 @@
   background: #4A6180;
 }
 
-/* Focus visible ring */
 :focus-visible {
   outline: 2px solid #00E5FF;
   outline-offset: 2px;
 }
 
-/* Select styling */
 select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234A6180' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;

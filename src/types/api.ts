@@ -1,4 +1,3 @@
-// ── Enums ────────────────────────────────────────────────────────────────────
 
 export type Species = 'BLOBITO' | 'CHISPA' | 'GRUNON' | 'DORMILON' | 'GLITCHY'
 export type VitalState = 'ESTABLE' | 'HAMBRIENTO' | 'AGITADO' | 'MUTANDO' | 'CRITICO'
@@ -15,7 +14,6 @@ export type SignalStatus = 'RECIBIDA' | 'PROCESANDO' | 'ATENDIDA'
 export type Climate = 'PIXEL_FOREST' | 'NEON_CAVE' | 'CLOUD_AQUARIUM' | 'RETRO_ARCADE'
 export type SortOption = 'name,asc' | 'updatedAt,desc' | 'chaosIndex,desc'
 
-// ── Auth ─────────────────────────────────────────────────────────────────────
 
 export interface User {
   id: string
@@ -31,7 +29,6 @@ export interface LoginResponse {
   user: User
 }
 
-// ── Dashboard ─────────────────────────────────────────────────────────────────
 
 export interface DashboardSummary {
   totalTropels: number
@@ -42,7 +39,6 @@ export interface DashboardSummary {
   generatedAt: string
 }
 
-// ── Tropel ────────────────────────────────────────────────────────────────────
 
 export interface TropelSector {
   id: string
@@ -82,7 +78,6 @@ export interface TropelFilters {
   sort: SortOption
 }
 
-// ── Signal ────────────────────────────────────────────────────────────────────
 
 export interface SignalTropel {
   id: string
@@ -115,7 +110,6 @@ export interface SignalFilters {
   q?: string
 }
 
-// ── Sector ────────────────────────────────────────────────────────────────────
 
 export interface Sector {
   id: string
@@ -131,7 +125,6 @@ export interface SectorList {
   items: Sector[]
 }
 
-// ── Story ─────────────────────────────────────────────────────────────────────
 
 export interface StageMetrics {
   stability: number
@@ -160,7 +153,6 @@ export interface SectorStory {
   stages: StoryStage[]
 }
 
-// ── API Error ─────────────────────────────────────────────────────────────────
 
 export interface ApiError {
   error: string
